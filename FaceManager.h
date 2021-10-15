@@ -17,11 +17,10 @@ public:
     virtual void setup() = 0;
     virtual void cleanup() = 0;
 	//virtual void drawFaces(float red, float green, float blue)=0;
-   
-    virtual void drawFaces(int colourNum) = 0;
+ 
     virtual void drawFace(int i)=0;
 	virtual int getNumFaces()=0;
-
+    virtual void drawFaces(int colourNum) = 0;
 protected:
     IFaceManager() {}
     virtual ~IFaceManager() {}

@@ -172,12 +172,12 @@ void FaceManager::cleanup()
 *******************************************************************************/
 void FaceManager::drawFaces(int colourNum)
 {
-	for (int i = 0; i < kNumFaces; i++)
+	/*for (int i = 0; i < kNumFaces; i++)
     {
 		drawFace(i);
-	}
+	}*/
 	glPushMatrix(); glTranslatef(-1.5, 1.0, -2.0);
-	if(colourNum == 1)
+	if (colourNum == 1)
 		glColor3f(0.5f, 0.1f, 0.7f);
 	else
 		glColor3f(0.1f, 0.7f, 0.1f);
@@ -186,6 +186,8 @@ void FaceManager::drawFaces(int colourNum)
 	glPopMatrix();
 	glFlush();
 }
+
+
 
 /*******************************************************************************
 	Draw one face
